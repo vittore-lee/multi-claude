@@ -3,7 +3,7 @@
 Claude 데스크톱 앱(macOS)을 **계정별로 동시에** 실행하기 위한 런처 생성 스크립트.
 Run multiple Claude Desktop accounts side by side on macOS.
 
-로그아웃 → 재로그인 없이, Dock 아이콘 클릭만으로 개인/회사 계정 창을 각각 띄울 수 있습니다.
+로그아웃 → 재로그인 없이, Dock 아이콘 클릭만으로 2개의 계정 창을 각각 띄울 수 있습니다.
 
 ## 동작 원리
 
