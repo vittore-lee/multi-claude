@@ -98,7 +98,7 @@ exec /usr/bin/open -n -a /Applications/Claude.app
 EOF
   chmod +x "$app/Contents/MacOS/launcher"
   info "생성: $app"
-  info "기본 계정(기존 Claude 프로필)을 엽니다."
+  info "기본 계정(기존 Claude 프로필)용 런처입니다. Dock에 고정한 뒤 클릭하면 열립니다."
   reveal
 }
 
