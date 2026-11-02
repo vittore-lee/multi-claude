@@ -15,7 +15,7 @@ Claude 데스크톱은 Electron 앱이며, `--user-data-dir` 플래그로 프로
 
 ## 설치
 
-**일반 터미널(Terminal.app, iTerm 등)에서 실행하세요.** Claude Code 세션 입력창에 붙여넣으면 작업 요청으로 처리되어 실패합니다.
+**일반 터미널(Terminal.app, iTerm 등)에서 실행하세요.** 아래 명령을 Claude Code 세션 입력창에 그대로 붙여넣으면 작업 요청으로 처리되어 실패합니다. Claude Code에 설치를 맡기려면 [Claude Code로 설치하기](#claude-code로-설치하기)를 참고하세요.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/vittore-lee/multi-claude/main/claude-profiles.sh -o ~/claude-profiles.sh
@@ -25,6 +25,24 @@ bash ~/claude-profiles.sh add Work    # 추가 계정 런처 → ~/Applications/
 ```
 
 필요한 만큼 `add <이름>`으로 계정을 추가할 수 있습니다(영문·숫자·`-`·`_`).
+
+## Claude Code로 설치하기
+
+터미널 명령 대신 Claude Code에 설치를 맡길 수 있습니다.
+
+**조건: 자기 Mac에서 실행되는 Claude Code 세션이어야 합니다.**
+
+- 가능: Mac 터미널의 `claude`, Claude 데스크톱 앱 Code 탭에서 로컬 폴더로 연 세션
+- 불가: claude.ai/code 웹 세션 등 클라우드 세션 (런처가 내 Mac이 아니라 클라우드 컨테이너에 생성되고, macOS가 아니라서 스크립트가 중단됩니다)
+
+세션 입력창에 아래 문장을 붙여넣으세요. `Work`는 원하는 계정 이름으로 바꾸면 됩니다(영문·숫자·`-`·`_`).
+
+```text
+https://github.com/vittore-lee/multi-claude 의 README를 읽고 claude-profiles.sh 를 내려받아 설치해줘.
+기본 계정 런처(main)와 추가 계정 런처(Work)를 만들어줘. 런처를 실행하지는 마.
+```
+
+명령 실행 권한을 물으면 승인하세요. 설치가 끝나면 아래 [설정](#설정)의 Dock 고정과 첫 로그인은 직접 진행해야 합니다.
 
 ## 설정
 
